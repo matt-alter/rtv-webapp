@@ -1,153 +1,146 @@
-body{
-  padding-top: 0px!important;
-  font-family: Knowledge;
+body {
+    padding-top: 0px !important;
+    background-color: #000;
+    font-family: Knowledge;
 }
-#navbar .navbar-inverse{
-  background-color: #000!important;
+
+#navbar .navbar-inverse {
+    background-color: #000 !important;
 }
-.jumbotron{
-  background-color: #000!important;
+
+.jumbotron {
+    background-color: #000 !important;
 }
-.content{
-  margin: 0 auto!important;
+
+.content {
+    margin: 0 auto !important;
 }
-p{
-  color: #fff;
+
+p {
+    color: #fff;
 }
-.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
-.onebyone-carosel .active.left { left: -33.33%; }
-.onebyone-carosel .active.right { left: 33.33%; }
-.onebyone-carosel .next { left: 33.33%; }
-.onebyone-carosel .prev { left: -33.33%; }
+
+.carousel-inner.onebyone-carosel {
+    margin: auto;
+    width: 90%;
+}
+
+.onebyone-carosel .active.left {
+    left: -33.33%;
+}
+
+.onebyone-carosel .active.right {
+    left: 33.33%;
+}
+
+.onebyone-carosel .next {
+    left: 33.33%;
+}
+
+.onebyone-carosel .prev {
+    left: -33.33%;
+}
+
 /*.text-center {color: #fff; width: 150px; text-align: left;}*/
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
-
 .header {
-  padding: 0;
-  width: 100%;
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 .header a {
-  color: #f0efeb;
+    color: #f0efeb;
 }
-.header a:hover{
-  color: #dbdad6;
+
+.header a:hover {
+    color: #dbdad6;
 }
-.text-center {
-  text-align: center;
-}
-.footer {
-  padding: 40px;
-  font-size: 12px;
-  line-height: 1;
-  color: #aeaeae;
-  letter-spacing: 0;
-}
+
 .social {
 }
 
 .fb, .tw {
-  display: inline-block;
-  padding: 10px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .connect-email {
-  padding: 10px;
-  width: 376px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  border: 1px solid;
-  border-radius: 3px;
+    padding: 10px;
+    width: 376px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border: 1px solid;
+    border-radius: 3px;
 }
 
 .connect-email:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 input[type='email'], input[type='password'], input[type='submit'], input[type="checkbox"], .connect-email {
-  background: #1b1b1b;
-  border-color: #434343;
+    background: #1b1b1b;
+    border-color: #434343;
 }
 
 input[type='submit'] {
-  background: #434343;
-  color: #d6d5d1;
+    background: #434343;
+    color: #d6d5d1;
 }
 
 input[type='submit']:hover {
-  background: #434343;
-  color: #f7f6f2;
-  border-color: #6bb1ff;
+    background: #434343;
+    color: #f7f6f2;
+    border-color: #6bb1ff;
 }
 
 form > div {
-  padding-left: 50px;
+    padding-left: 50px;
 }
 
 .email-field, .password-field {
-  /*background-size: 40px 30px;*/
-  background-repeat: no-repeat;
-  -ms-background-position-y: center;
-  background-position-y: center;
+    /*background-size: 40px 30px;*/
+    background-repeat: no-repeat;
+    -ms-background-position-y: center;
+    background-position-y: center;
 }
 
 .email-field {
-  background-image: url("signup_email_360.png");
+    background-image: url("signup_email_360.png");
 }
 
 .password-field {
-  background-image: url("pass_360.png");
+    background-image: url("pass_360.png");
 }
 
-.container{
-  padding-top: 50px!important;
+.container div.form-sign {
+    width: 430px;
 }
+
 .container > .fb-tw > img {
-  margin-left: 21px;
+    margin-left: 21px;
 }
 
 .form-register, .form-login {
-  display: none;
+    display: none;
 }
 
 .brand {
-  display: inline-block;
-  width: 140px;
-  height: 40px;
-  background: url(http://www.reuters.tv/img/brand.svg) 0 0 no-repeat;
-  background-size: 136px 33px;
-  text-indent: 300px;
-  white-space: nowrap;
-  overflow: hidden;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    background: url(http://www.reuters.tv/img/brand.svg) 0 0 no-repeat;
+    background-size: 136px 33px;
+    text-indent: 300px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .left {
-  float: left;
+    float: left;
 }
 
 .right {
-  float: right;
-}
-.list-inline,
-.list-inline li  {
-  display: inline-block;
-  list-style: none;
-}
-.navbar {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 86%;
-
-}
-
-.navbar > div {
-  padding: 0;
-  margin: 0;
+    float: right;
 }
