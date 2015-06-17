@@ -53,7 +53,9 @@ p {
 
 .title {
     text-align: left;
-    color: #fff;
+}
+.story-title{
+    color: #fff!important;
 }
 
 .header {
@@ -228,4 +230,14 @@ form > div {
 }
 .col-md-2:hover{
     background-color: #333;
+}
+
+@media (max-width: 991px), (max-height: 460px) {
+    .col-md-2:hover{
+        background-color: transparent;
+    }
+    .col-md-2{
+        display: inline-block;
+    float: left;
+    }
 }
