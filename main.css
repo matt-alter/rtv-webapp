@@ -1,7 +1,15 @@
+* {
+    color: #adadad !important;
+    font-family: Knowledge, serif !important;
+}
+
+a {
+    color: #e8e8e8 !important;
+}
+
 body {
     padding-top: 0px !important;
     background-color: #000;
-    font-family: Knowledge;
 }
 
 #navbar .navbar-inverse {
@@ -16,13 +24,14 @@ body {
     margin: 0 auto !important;
 }
 
-
 p {
     color: #fff;
 }
-.rtv__extras{
-  background-color: #000!important;
+
+.rtv__extras {
+    background-color: #000 !important;
 }
+
 .carousel-inner.onebyone-carosel {
     margin: auto;
     width: 90%;
@@ -46,7 +55,7 @@ p {
 
 .text-center {
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
 
 .header {
@@ -61,23 +70,14 @@ p {
     color: #dbdad6;
 }
 
-.social {
+.navbar {
+    padding: 5px 10px 0;
 }
 
 .fb, .tw {
     display: inline-block;
     padding: 10px;
 }
-
-.connect-email {
-    padding: 10px;
-    width: 250px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    border: 1px solid;
-    border-radius: 3px;
-}
-
 .connect-email:hover {
     cursor: pointer;
 }
@@ -118,18 +118,38 @@ form > div {
 }
 
 .container div.form-sign {
-    width: 430px;
+    max-width: 350px;
+    min-width: 290px;
+    position: relative;
 }
 
-.container > .fb-tw > img {
-    margin-left: 21px;
+.container div.form-sign > *{
+    width: 90%;
 }
-.rtv__extras{
-    background-color: #000!important;
+
+.container div.form-sign > img {
+    margin-left: 5%;
+    width: 95%;
 }
-.rtv__title{
+
+.container div.form-sign > div {
+    margin-left: 10%;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+
+.rtv__extras {
+    background-color: #000 !important;
+}
+
+.rtv__title {
 
 }
+
 .form-register, .form-login {
     display: none;
 }
