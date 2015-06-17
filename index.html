@@ -1,161 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Reuters TV</title>
-<link rel=icon href="http://reuters.tv/img/favicon.ico">
-<!-- App store - change ID here -->
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, width=auto, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Reuters TV</title>
+  <link rel=icon href="http://reuters.tv/img/favicon.ico">
+  <!-- App store - change ID here -->
   <meta name="apple-itunes-app" content="app-id=944245256">
-<!-- Bootstrap core CSS -->
-<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
-<script src="./index_files/ie-emulation-modes-warning.js"></script>
-<style type="text/css">
-  body{
-    padding-top: 0px!important;
-    background-color: #000;
-    font-family: Knowledge;
-  }
-  #navbar .navbar-inverse{
-    background-color: #000!important;
-  }
-  .jumbotron{
-    background-color: #000!important;
-  }
-  .content{
-    margin: 0 auto!important;
-  }
-  p{
-    color: #fff;
-  }
-  .carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
-  .onebyone-carosel .active.left { left: -33.33%; }
-  .onebyone-carosel .active.right { left: 33.33%; }
-  .onebyone-carosel .next { left: 33.33%; }
-  .onebyone-carosel .prev { left: -33.33%; }
-  .text-center {color: #fff; width: 150px; text-align: left;}
-  
-
-  .header {
-    padding: 0;
-    width: 100%;
-    padding-top: 10px;
-  }
-
-  .header a {
-    color: #f0efeb;
-  }
-  .header a:hover{
-    color: #dbdad6;
-  }
-
-  .social {
-  }
-
-  .fb, .tw {
-    display: inline-block;
-    padding: 10px;
-  }
-
-  .connect-email {
-    padding: 10px;
-    width: 376px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    border: 1px solid;
-    border-radius: 3px;
-  }
-
-  .connect-email:hover {
-    cursor: pointer;
-  }
-
-  input[type='email'], input[type='password'], input[type='submit'], input[type="checkbox"], .connect-email {
-    background: #1b1b1b;
-    border-color: #434343;
-  }
-
-  input[type='submit'] {
-    background: #434343;
-    color: #d6d5d1;
-  }
-
-  input[type='submit']:hover {
-    background: #434343;
-    color: #f7f6f2;
-    border-color: #6bb1ff;
-  }
-
-  form > div {
-    padding-left: 50px;
-  }
-
-  .email-field, .password-field {
-    /*background-size: 40px 30px;*/
-    background-repeat: no-repeat;
-    -ms-background-position-y: center;
-    background-position-y: center;
-  }
-
-  .email-field {
-    background-image: url("signup_email_360.png");
-  }
-
-  .password-field {
-    background-image: url("pass_360.png");
-  }
-
-
-  .container > .fb-tw > img {
-    margin-left: 21px;
-  }
-
-  .form-register, .form-login {
-    display: none;
-  }
-
-  .brand {
-    display: inline-block;
-    width: 140px;
-    height: 40px;
-    background: url(http://www.reuters.tv/img/brand.svg) 0 0 no-repeat;
-    background-size: 136px 33px;
-    text-indent: 300px;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-  }
-
-  .navbar {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 86%;
-
-  }
-
-  .navbar > div {
-    padding: 0;
-    margin: 0;
-  }
-</style>
+  <!-- Bootstrap core CSS -->
+  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -176,11 +31,11 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <!--<div class="jumbotron">-->
-    <div class="container">
-      <div class="RTVPlayer"></div>
-    </div>
+  <div class="container">
+    <div class="RTVPlayer"></div>
+  </div>
   <!--</div>-->
-
+  <hr>
   <div class="container">
     <div id="myCarousel" class="carousel fdi-Carousel slide">
      <!-- Carousel items -->
@@ -211,9 +66,18 @@
     <!--/carousel-inner-->
   </div><!--/myCarousel-->
   <hr>
-  <footer class="footer">
-    <p>© Reuters TV 2015</p>
-  </footer>
+  <div class="footer text-center">
+    <p class="muted">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    <p class="muted">Copyright © <span id="date-year">2015</span> Thomson Reuters</p>
+    <ul class="list-inline">
+      <li><a href="advertise.html">Advertise</a></li>
+      <li><a href="press.html">Press</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="tos.html">Terms of Use</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="https://control.kochava.com/v1/cpi/click?campaign_id=koreuters----ios54b805ad417a4384474cbb806b&amp;network_id=2007&amp;device_id=device_id&amp;site_id=1">Download the App</a></li>
+    </ul>
+  </div>
 </div> <!-- /container -->
 
 
@@ -245,15 +109,15 @@
       });
     </script>
     <script type="text/javascript" src="http://cdnstatic.reuters.tv/syndicatedPlayerClient/js/syndicatedPlayerSetup.js"></script>
-<script type="text/javascript">
-        window.addEventListener("load", function(e) {
-            var playerH = new reutersTV({
-            adTag:"",
-            fontElClass:"",
-            playerClass:"RTVPlayer",
-            publisherId:"1234"
-    });
-});
-</script>
+    <script type="text/javascript">
+      window.addEventListener("load", function(e) {
+        var playerH = new reutersTV({
+          adTag:"",
+          fontElClass:"",
+          playerClass:"RTVPlayer",
+          publisherId:"1234"
+        });
+      });
+    </script>
   </body>
   </html>
