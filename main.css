@@ -79,6 +79,7 @@ p {
     display: inline-block;
     padding: 10px;
 }
+
 .connect-email:hover {
     cursor: pointer;
 }
@@ -124,7 +125,7 @@ form > div {
     position: relative;
 }
 
-.container div.form-sign > *{
+.container div.form-sign > * {
     width: 90%;
 }
 
@@ -141,7 +142,6 @@ form > div {
     border: 1px solid;
     border-radius: 3px;
 }
-
 
 .rtv__extras {
     background-color: #000 !important;
