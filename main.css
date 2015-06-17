@@ -237,6 +237,8 @@ form > div {
         background-color: transparent;
     }
     .col-md-2 img {
+        width: 100px;
+        height: 100px;
         float: left;   
         margin-top: 20px;
         margin-right: 20px; 
