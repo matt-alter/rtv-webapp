@@ -18,18 +18,19 @@ body {
 }
 
 .jumbotron {
-    background-color: #000!important;
+    background-color: #000 !important;
 }
 
 .content {
     margin: 0 auto !important;
 }
+
 .level {
-  position: relative;
-  border-bottom: 1px solid #dfe0e1;
-  overflow: hidden;
-  padding: 50px 0 30px;
-  text-align: center;
+    position: relative;
+    border-bottom: 1px solid #dfe0e1;
+    overflow: hidden;
+    padding: 50px 0 30px;
+    text-align: center;
 }
 
 p {
@@ -40,18 +41,20 @@ p {
     background-color: #000 !important;
 }
 
-
 .text-center {
     text-align: center;
     color: #fff;
 }
+
 .mb-20 {
-  margin-bottom: 20px;
-  margin-bottom: .909rem;
+    margin-bottom: 20px;
+    margin-bottom: .909rem;
 }
-.title{
+
+.title {
     text-align: left;
 }
+
 .header {
     padding-top: 10px;
 }
@@ -160,6 +163,12 @@ form > div {
     overflow: hidden;
 }
 
+@media (min-width: 500px) {
+    .brand {
+        width: 140px;
+    }
+}
+
 .left {
     position: absolute;
     left: 0;
@@ -175,6 +184,14 @@ form > div {
     width: 80px;
     margin-top: 5px;
 }
+
+@media (max-width: 500px) {
+    .picker select{
+        background: #1e1e1e !important;
+        color: #ffffff !important;
+    }
+}
+
 .container-fluid {
     background-color: #fff;
     margin-right: auto;
@@ -194,17 +211,18 @@ form > div {
 }
 
 .row {
-  margin-left: -30px;
-  margin-right: -30px;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 
 .row:after {
     clear: both;
 }
 
-.RTVPlayer{
-    height: 40%!important;
+.RTVPlayer {
+    height: 40% !important;
 }
-.level-outro{
-    background-color: #fff!important;
+
+.level-outro {
+    background-color: #fff !important;
 }
