@@ -7,10 +7,11 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
 <title>Reuters TV</title>
-
+<link rel=icon href="http://reuters.tv/img/favicon.ico">
+<!-- App store - change ID here -->
+  <meta name="apple-itunes-app" content="app-id=944245256">
 <!-- Bootstrap core CSS -->
 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -174,11 +175,11 @@
   </div>
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+  <!--<div class="jumbotron">-->
     <div class="container">
-      <iframe src="http://watch.reuters.tv/sTX" width="1150" height="800" frameborder="0"></iframe>
+      <div class="RTVPlayer"></div>
     </div>
-  </div>
+  <!--</div>-->
 
   <div class="container">
     <div id="myCarousel" class="carousel fdi-Carousel slide">
@@ -222,7 +223,6 @@
     <script src="./index_files/jquery.min.js"></script>
     <script src="./index_files/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./index_files/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('#myCarousel').carousel({
@@ -244,5 +244,16 @@
         });
       });
     </script>
+    <script type="text/javascript" src="http://cdnstatic.reuters.tv/syndicatedPlayerClient/js/syndicatedPlayerSetup.js"></script>
+<script type="text/javascript">
+        window.addEventListener("load", function(e) {
+            var playerH = new reutersTV({
+            adTag:"",
+            fontElClass:"",
+            playerClass:"RTVPlayer",
+            publisherId:"1234"
+    });
+});
+</script>
   </body>
   </html>
