@@ -10,11 +10,11 @@ a {
 body {
     padding-top: 0px !important;
     background-color: #000;
-    
+
 }
 
 .navbar-inverse {
-    background-color: #000!important;
+    /*background-color: #000!important;*/
 }
 
 .jumbotron {
@@ -151,7 +151,7 @@ form > div {
 
 .brand {
     display: inline-block;
-    width: 140px;
+    width: 40px;
     height: 40px;
     background: url(http://www.reuters.tv/img/brand.svg) 0 0 no-repeat;
     background-size: 136px 33px;
@@ -174,7 +174,6 @@ form > div {
 .picker {
     width: 80px;
     margin-top: 5px;
-    float: right;
 }
 .container-fluid {
     background-color: #fff;

@@ -88,6 +88,14 @@
             $('.form-register').slideUp();
             $('.form-login').slideDown();
         });
+
+        $(window).resize(function () {
+            if ($(window).width() > 500) {
+                $('.brand').css('width', '140px');
+            }
+        });
+
+        $(window).trigger('resize');
     });
 </script>
 <div class="footer"></div>
