@@ -40,7 +40,7 @@
         </div>
 
         <div class="right">
-            <a href="sign.html">LOGIN/SIGNUP</a>
+            <a href="sign.html">LOGIN</a>
         </div>
         <!--/.navbar-collapse -->
     </nav>
@@ -89,69 +89,78 @@
       </div>
     </div>
 </div>
+</div>
 
 <div class="level level-outro text-center">
-    <div class="container">
+    <div class="footer container">
         <!-- form class=contact method=post action="https://app.icontact.com/icp/signup.html" accept-charset="UTF-8" -->
 
-        <form class="contact" method="get" action="/" accept-charset="UTF-8">
+        <form class="contact center-block" method="get" action="/" accept-charset="UTF-8">
 
             <div class="h2 mb-20">Available on the <br class="visible-xs-block"> App Store</div>
-            <p class="mb-35">Enter your phone number and we’ll send a link to your iPhone
 
-            </p>
+            <div class="browser">
+                <p class="mb-35">Enter your phone number and we’ll send a link to your iPhone
 
-            <div class="btn-append dropdown-prepend">
+                </p>
 
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="f1" data-toggle="dropdown"
-                            aria-expanded="true">
-                        <span id="option-value-f1">US (+1)</span>
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" data-displaytarget="#option-value-f1" data-inputtarget=".f1-target"
-                        role="menu" aria-labelledby="f1">
-                        <li role="presentation" data-placeholder="UK ( +44)" data-value="44">UK ( +44)</li>
-                        <li role="presentation" data-placeholder="US ( +1)" data-value="1" class="disabled">US ( +1)
-                        </li>
-                    </ul>
+                <div class="btn-append dropdown-prepend">
+
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="f1" data-toggle="dropdown"
+                                aria-expanded="true">
+                            <span id="option-value-f1">US (+1)</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" data-displaytarget="#option-value-f1" data-inputtarget=".f1-target"
+                            role="menu" aria-labelledby="f1">
+                            <li role="presentation" data-placeholder="UK ( +44)" data-value="44">UK ( +44)</li>
+                            <li role="presentation" data-placeholder="US ( +1)" data-value="1" class="disabled">US ( +1)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- actual select here -->
+                    <select name="country-code" class="sr-only f1-target countryCode">
+                        <option selected="" value="1">US (+1)</option>
+                        <option value="44">UK (+44)</option>
+                    </select>
+
+                    <input type="tel" class="text phoneNumber" name="tel" placeholder="Phone number" required="">
+
+                    <input type="submit" class="submit appended btn" value="submit">
+
                 </div>
-
-                <!-- actual select here -->
-                <select name="country-code" class="sr-only f1-target countryCode">
-                    <option selected="" value="1">US (+1)</option>
-                    <option value="44">UK (+44)</option>
-                </select>
-
-                <input type="tel" class="text phoneNumber" name="tel" placeholder="Phone number" required="">
-
-                <input type="submit" class="submit appended" value="submit">
-
             </div>
 
+            <div class="ios"></div>
         </form>
-        <div class="success text-center">
-            <div class="h2 mb-20">Thank you.</div>
-            <p class="mb-45">We’ve sent the App Store link to your phone. Please allow up to a minute for it to arrive.
-
-            </p>
-
-            <p class="smallest">If it doesn’t arrive you can <a class="reload-form underline" href="#">retry</a> or go
-                to the <a class="underline"
-                          href="https://control.kochava.com/v1/cpi/click?campaign_id=koreuters----ios54b805ad417a4a32ed30f1cfae&amp;network_id=1987&amp;device_id=device_id&amp;site_id=1">App
-                    Store</a>.
-            </p></div>
     </div>
 
+    <div class="footer text-center top-line">
+        <p class="muted">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other
+            countries. App Store is a service mark of Apple Inc.</p>
 
+        <p class="muted">Copyright © <span id="date-year">2015</span> Thomson Reuters</p>
+        <ul class="list-inline">
+            <li><a href="advertise.html">Advertise</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="tos.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li>
+                <a href="https://control.kochava.com/v1/cpi/click?campaign_id=koreuters----ios54b805ad417a4384474cbb806b&amp;network_id=2007&amp;device_id=device_id&amp;site_id=1">Download
+                    the App</a></li>
+        </ul>
+    </div>
 </div>
 
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript"
@@ -165,6 +174,12 @@
             publisherId: "1234"
         });
     });
+
+    var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+    if (iOS) {
+        $('.browser').css('display', 'none');
+        $('.ios').css('display', 'block');
+    }
 </script>
 </body>
 </html>

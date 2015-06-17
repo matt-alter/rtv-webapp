@@ -13,10 +13,6 @@ body {
 
 }
 
-.navbar-inverse {
-    background-color: #000!important;
-}
-
 .jumbotron {
     background-color: #000 !important;
 }
@@ -54,8 +50,9 @@ p {
 .title {
     text-align: left;
 }
-.story-title{
-    color: #fff!important;
+
+.story-title {
+    color: #fff !important;
 }
 
 .header {
@@ -71,7 +68,7 @@ p {
 }
 
 .navbar {
-    padding: 5px 10px 0;
+    padding: 5px 0;
     position: relative;
 }
 
@@ -100,7 +97,7 @@ input[type='submit']:hover {
     border-color: #6bb1ff;
 }
 
-form > div {
+.form-sign form > div {
     padding-left: 50px;
 }
 
@@ -174,12 +171,12 @@ form > div {
 
 .left {
     position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .right {
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 10px;
 }
 
@@ -189,7 +186,7 @@ form > div {
 }
 
 @media (max-width: 500px) {
-    .picker select{
+    .picker select {
         background: #1e1e1e !important;
         color: #ffffff !important;
     }
@@ -214,26 +211,28 @@ form > div {
 }
 
 .row {
-  margin-left: -16px;
-  margin-right: -34px;
+    margin-left: -16px;
+    margin-right: -34px;
 }
 
 .row:after {
     clear: both;
 }
 
-.RTVPlayer{
-    height: 40%!important;
+.RTVPlayer {
+    height: 40% !important;
 }
-.level-outro{
-    background-color: #fff!important;
+
+.level-outro {
+    background-color: #fff !important;
 }
-.col-md-2:hover{
+
+.col-md-2:hover {
     background-color: #333;
 }
 
 @media (max-width: 991px), (max-height: 460px) {
-    .col-md-2:hover{
+    .col-md-2:hover {
         background-color: transparent;
     }
     .col-md-2 img {
@@ -253,4 +252,97 @@ form > div {
         margin: 18px!important;
         padding-left: 20px!important;
      }
+}
+
+
+.main-content {
+    min-height: 450px;
+}
+
+.level-outro {
+    padding-top: 0;
+}
+
+.dropdown-prepen, .dropdown {
+    display: inline-block;
+}
+
+.footer {
+    padding: 40px;
+}
+
+.footer * {
+    color: rgb(174, 174, 174) !important;
+}
+
+.top-line {
+    border-top: 1px solid;
+}
+
+input.phoneNumber {
+
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 0;
+
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form.contact {
+    width: 600px;
+}
+
+.btn, input.phoneNumber {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.42857143;
+    padding: 12px;
+}
+
+.footer .h2 {
+    color: #242424 !important;
+    font-size: 50px;
+}
+
+@media (max-width: 620px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .level-outro {
+        padding: 0;
+    }
+
+    form.contact {
+        width: 100%;
+    }
+
+    .btn, input.phoneNumber {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .footer .h2 {
+        font-size: 30px;
+    }
+}
+
+.ios {
+    display: none;
+    padding: 20px;
+    background: url(appstore.png) no-repeat center center;
+    background-size: contain;
 }
