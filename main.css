@@ -72,6 +72,7 @@ p {
 
 .navbar {
     padding: 5px 10px 0;
+    position: relative;
 }
 
 .fb, .tw {
@@ -82,7 +83,7 @@ p {
     cursor: pointer;
 }
 
-input[type='email'], input[type='password'], input[type='submit'], input[type="checkbox"], .connect-email {
+input[type='email'], input[type='password'], input[type='submit'], input[type="checkbox"], .connect-email, select {
     background: #1b1b1b;
     border-color: #434343;
 }
@@ -166,9 +167,17 @@ form > div {
 }
 
 .left {
-    float: left;
+    position: absolute;
+    left: 0;
 }
 
 .right {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.picker {
+    width: 80px;
+    margin-top: 5px;
 }

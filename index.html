@@ -1,123 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="user-scalable=no, width=auto, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Reuters TV</title>
-  <link rel=icon href="http://reuters.tv/img/favicon.ico">
-  <!-- App store - change ID here -->
-  <meta name="apple-itunes-app" content="app-id=944245256">
-  <!-- Bootstrap core CSS -->
-  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=auto, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>Reuters TV</title>
+    <link rel=icon href="http://reuters.tv/img/favicon.ico">
+    <!-- App store - change ID here -->
+    <meta name="apple-itunes-app" content="app-id=944245256">
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="header navbar-inverse">
+<div class="header navbar-inverse">
     <nav class="navbar container">
-      <div>
-        <a href="index.html">
-          <div class="brand left"></div>
-        </a>
-      </div>
-      <div class="right">
-        <a href="sign.html">LOG IN</a>
-      </div>
-      <!--/.navbar-collapse -->
+        <div class="left">
+            <a href="index.html">
+                <div class="brand"></div>
+            </a>
+        </div>
+
+        <div class="picker center-block">
+            <select>
+                <option>5 min</option>
+                <option>10 min</option>
+                <option>15 min</option>
+                <option>20 min</option>
+                <option>25 min</option>
+                <option>30 min</option>
+            </select>
+        </div>
+
+        <div class="right">
+            <a href="sign.html">Login / Singup</a>
+        </div>
+        <!--/.navbar-collapse -->
     </nav>
-  </div>
+</div>
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <!--<div class="jumbotron">-->
-  <div class="container">
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<!--<div class="jumbotron">-->
+<div class="container">
     <div class="RTVPlayer"></div>
-  </div>
-  <!--</div>-->
-  <hr>
-  <div class="container">
+</div>
+<!--</div>-->
+<hr>
+<div class="container">
     <div id="myCarousel" class="carousel fdi-Carousel slide">
-     <!-- Carousel items -->
-     <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
-      <div class="carousel-inner onebyone-carosel">
-        <div class="item active">
-          <div class="col-md-4">
-            <a href="#"><img src="http://is.reuters.tv/api/v2/img/557ffae360b27c50d1df0384-1434450660058?location=SQUARE" width="150" height="150"></a>
-            <div class="text-center">Blackhawks defeat Lightning to win Stanley Cup</div>
-          </div>
+        <!-- Carousel items -->
+        <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+            <div class="carousel-inner onebyone-carosel">
+                <div class="item active">
+                    <div class="col-md-4">
+                        <a href="#"><img
+                                src="http://is.reuters.tv/api/v2/img/557ffae360b27c50d1df0384-1434450660058?location=SQUARE"
+                                width="150" height="150"></a>
+
+                        <div class="text-center">Blackhawks defeat Lightning to win Stanley Cup</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-md-4">
+                        <a href="#"><img
+                                src="http://is.reuters.tv/api/v2/img/5580523b60b2ae4ddc0fd413-1434473019619?location=SQUARE"
+                                width="150" height="150"></a>
+
+                        <div class="text-center">US confirms it killed al-Qaeda's number two</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-md-4">
+                        <a href="#"><img
+                                src="http://is.reuters.tv/api/v2/img/558058b560b2ae4ddc0fd41c-1434474677794?location=SQUARE"
+                                width="150" height="150"></a>
+
+                        <div class="text-center">FBI probes Cardinals for hacking Astros</div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a>
+            <a class="right carousel-control" href="#eventCarousel" data-slide="next"></a>
         </div>
-        <div class="item">
-          <div class="col-md-4">
-            <a href="#"><img src="http://is.reuters.tv/api/v2/img/5580523b60b2ae4ddc0fd413-1434473019619?location=SQUARE" width="150" height="150"></a>
-            <div class="text-center">US confirms it killed al-Qaeda's number two</div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="col-md-4">
-            <a href="#"><img src="http://is.reuters.tv/api/v2/img/558058b560b2ae4ddc0fd41c-1434474677794?location=SQUARE" width="150" height="150"></a>
-            <div class="text-center">FBI probes Cardinals for hacking Astros</div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a>
-      <a class="right carousel-control" href="#eventCarousel" data-slide="next"></a>
+        <!--/carousel-inner-->
     </div>
-    <!--/carousel-inner-->
-  </div><!--/myCarousel-->
-  <hr>
-  <div class="footer text-center">
-    <p class="muted">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
-    <p class="muted">Copyright © <span id="date-year">2015</span> Thomson Reuters</p>
-    <ul class="list-inline">
-      <li><a href="advertise.html">Advertise</a></li>
-      <li><a href="press.html">Press</a></li>
-      <li><a href="careers.html">Careers</a></li>
-      <li><a href="tos.html">Terms of Use</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="https://control.kochava.com/v1/cpi/click?campaign_id=koreuters----ios54b805ad417a4384474cbb806b&amp;network_id=2007&amp;device_id=device_id&amp;site_id=1">Download the App</a></li>
-    </ul>
-  </div>
-</div> <!-- /container -->
+    <!--/myCarousel-->
+    <hr>
+    <div class="footer text-center">
+        <p class="muted">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other
+            countries. App Store is a service mark of Apple Inc.</p>
+
+        <p class="muted">Copyright © <span id="date-year">2015</span> Thomson Reuters</p>
+        <ul class="list-inline">
+            <li><a href="advertise.html">Advertise</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="tos.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li>
+                <a href="https://control.kochava.com/v1/cpi/click?campaign_id=koreuters----ios54b805ad417a4384474cbb806b&amp;network_id=2007&amp;device_id=device_id&amp;site_id=1">Download
+                    the App</a></li>
+        </ul>
+    </div>
+</div>
+<!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./index_files/jquery.min.js"></script>
-    <script src="./index_files/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script type="text/javascript">
-      $(document).ready(function () {
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./index_files/jquery.min.js"></script>
+<script src="./index_files/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript">
+    $(document).ready(function () {
         $('#myCarousel').carousel({
-          interval: 10000
+            interval: 10000
         })
         $('.fdi-Carousel .item').each(function () {
-          var next = $(this).next();
-          if (!next.length) {
-            next = $(this).siblings(':first');
-          }
-          next.children(':first-child').clone().appendTo($(this));
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
 
-          if (next.next().length > 0) {
-            next.next().children(':first-child').clone().appendTo($(this));
-          }
-          else {
-            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-          }
+            if (next.next().length > 0) {
+                next.next().children(':first-child').clone().appendTo($(this));
+            }
+            else {
+                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+            }
         });
-      });
-    </script>
-    <script type="text/javascript" src="http://cdnstatic.reuters.tv/syndicatedPlayerClient/js/syndicatedPlayerSetup.js"></script>
-    <script type="text/javascript">
-      window.addEventListener("load", function(e) {
+    });
+</script>
+<script type="text/javascript"
+        src="http://cdnstatic.reuters.tv/syndicatedPlayerClient/js/syndicatedPlayerSetup.js"></script>
+<script type="text/javascript">
+    window.addEventListener("load", function (e) {
         var playerH = new reutersTV({
-          adTag:"",
-          fontElClass:"",
-          playerClass:"RTVPlayer",
-          publisherId:"1234"
+            adTag: "",
+            fontElClass: "",
+            playerClass: "RTVPlayer",
+            publisherId: "1234"
         });
-      });
-    </script>
-  </body>
-  </html>
+    });
+</script>
+</body>
+</html>
